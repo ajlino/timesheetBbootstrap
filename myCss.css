@@ -1,0 +1,21 @@
+@media all and (max-width: 959px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media all and (max-width: 576) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+.hours{
+  width: 45px;
+}
