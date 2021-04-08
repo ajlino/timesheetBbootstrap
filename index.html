@@ -18,14 +18,15 @@
 
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 
-  <link rel="stylesheet" href="myCss.css">
+  <link rel="stylesheet" href="myCss.css" type="text/css" media="screen, projection"/>
+  <link rel="stylesheet" href="myCssForPrint.css" type="text/css" media="print" />
 
   <script src="sketch.js"></script>
   <script src="Soldier.js"></script>
   <script src="Army.js"></script>
   <script src="processDate.js"></script>
   <script src="buttonToggle.js"></script>
-
+  <script src="printableTimesheet.js"></script>
 
   </head>
 
@@ -60,8 +61,8 @@
 
     <div class="col-4">
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
+      <button id="printable" type="button" class="btn btn-primary">
+        Printable Timesheet
       </button>
     </div>
 
@@ -96,12 +97,12 @@
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div id = "printData" class="modal-body">
         ...
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button id="print" type="button" class="btn btn-primary">Print</button>
       </div>
     </div>
   </div>

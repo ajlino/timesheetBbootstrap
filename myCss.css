@@ -19,3 +19,9 @@
 .hours{
   width: 45px;
 }
+
+.printable {
+  border: 1px solid;
+  font-size: small;
+  line-height: 1;
+}
