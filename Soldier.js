@@ -20,7 +20,7 @@ class Soldier{
 			'<button class="btn btn-light" type="button" value="Regular" data-wasChecked = "false">Regular</button>' +
 			'<button class="btn btn-light" type="button" value="Premium" data-wasChecked = "false">Premium</button>' +
 
-			'<input type="text" name = "entry[hours][]" class="input-group-text hours"  data-hours="10" value="-">' +
+			'<input type="text" name = "entry[hours][]" class="input-group-text hours "  data-hours="10" readonly value="-">' +
 
 			'<input type="text" name="entry[date][]" readonly class="form-control mobile d-none" value="'+xMobile+'">' +
 
