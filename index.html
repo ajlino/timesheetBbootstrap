@@ -27,6 +27,7 @@
   <script src="processDate.js"></script>
   <script src="buttonToggle.js"></script>
   <script src="printableTimesheet.js"></script>
+  <!-- <script src="action.php"></script> -->
 
   </head>
 
@@ -61,9 +62,7 @@
 
     <div class="col-4">
       <!-- Button trigger modal -->
-      <button id="printable" type="button" class="btn btn-primary">
-        Printable Timesheet
-      </button>
+      <input type ="submit" form = "myForm" class="btn btn-primary" value="Print" />
     </div>
 
     <div class = "col-4">
@@ -76,7 +75,7 @@
 
 
 <div id="buttons" class="container">
-  <form id="myForm">
+  <form id="myForm" action = "action.php" method="post" target="_blank">
     <div class="row justify-content-center">
       <div id="main1" class="main col-lg-6">
       </div>

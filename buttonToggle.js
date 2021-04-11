@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
 	$("#buttons").on("click", ".btn", function(){
-		var $value = $(this).siblings('#choice');
+		var $value = $(this).siblings('.choice');
 		var $btns = $(this).siblings(".btn");
 		var $hrs = $(this).siblings('.hours');
 
@@ -10,7 +10,6 @@ $(document).ready(function(){
 			$(this).removeClass("btn-danger");
 			$(this).addClass("btn-light");
 			$value.val("-");	//set value of sibling with ID="value"
-			$value.text("-");	//set text of sibling with ID="value"
 			$(this).data('wasChecked', "false");
 
 		} else {
@@ -21,9 +20,8 @@ $(document).ready(function(){
 			$btns.addClass("btn-light");
 
 			$value.val($(this).val());	////set value of sibling with ID="value"
-			console.log($(this).data("wasChecked"));
-			console.log($(this).val());
 		}
+
 		$(this).siblings().data("wasChecked", "false");
 
 		if ($value.val() == "Regular"){
@@ -47,13 +45,13 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#buttons").on("click", "#submit", function(){
-		let myForm = document.getElementById('myForm');
-		let formData = new FormData(myForm);
-
-		for(var pair of formData.entries()) {
-		   console.log(pair[0]+ ', '+ pair[1]);
-		}
-
-	});
+	// $("#buttons").on("click", "#submit", function(){
+	// 	let myForm = document.getElementById('myForm');
+	// 	let formData = new FormData(myForm);
+	//
+	// 	for(var pair of formData.entries()) {
+	// 	   console.log(pair[0]+ ', '+ pair[1]);
+	// 	}
+	//
+	// });
 });
