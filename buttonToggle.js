@@ -45,7 +45,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#buttons").on("click", "#submit", function(){
-		
-	});
+	// $("#buttons").on("click", "#submit", function(){
+	//
+	// });
 });

@@ -4,6 +4,12 @@ $tableName="timesheet5";
 
 include_once 'timesheetDBH.php';
 
+$id = 1;
+$year = 2021;
+$month = 4;
+$firstName = "Andrew";
+$lastName = "Linovitz";
+
 
 $dates = ($_POST['entry']['date']);
 $hours = ($_POST['entry']['hours']);

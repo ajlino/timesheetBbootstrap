@@ -2,8 +2,8 @@ CREATE TABLE timesheet5 (
     id varchar(256) not null ,
     firstName varchar(256) not null,
     lastName varchar(256) not null,
-    yr varchar(30)  not null,
-    mth varchar(30)  not null,
+    year varchar(30)  not null,
+    month varchar(30)  not null,
     day1 varchar(2020) ,
     day2 varchar(20) ,
     day3 varchar(20) ,
@@ -36,7 +36,7 @@ CREATE TABLE timesheet5 (
     day30 varchar(20) ,
     day31 varchar(20) ,
 
-PRIMARY KEY(id, yr, mth)
+PRIMARY KEY(id, year, month)
 
 
 );
