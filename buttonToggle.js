@@ -45,13 +45,4 @@ $(document).ready(function(){
 		}
 	});
 
-	// $("#buttons").on("click", "#submit", function(){
-	// 	let myForm = document.getElementById('myForm');
-	// 	let formData = new FormData(myForm);
-	//
-	// 	for(var pair of formData.entries()) {
-	// 	   console.log(pair[0]+ ', '+ pair[1]);
-	// 	}
-	//
-	// });
 });

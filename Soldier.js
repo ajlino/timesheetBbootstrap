@@ -8,7 +8,7 @@ class Soldier{
 		let x,y;
 
 		x = this.dateObject //make it shorter
-		let xMobile = x.format('M/D/YYYY');
+		let xMobile = x.format('YYYY-M-D');
 		let xDesktop = x.format('dddd, MMMM D, YYYY');
 		console.log("Clicked");
 
@@ -24,9 +24,9 @@ class Soldier{
 
 			'<input type="text" name="entry[date][]" readonly class="form-control mobile d-none" value="'+xMobile+'">' +
 
-			// '<input type="text" readonly class="form-control bg-light desktop" value="'+xDesktop+'">' +
+			'<input type="text" readonly class="form-control bg-light desktop" value="'+xDesktop+'">' +
 			//
-			'<input type="text" name="entry[selection][]" readonly class="form-control choice" value="-">' +
+			'<input type="text" name="entry[selection][]" readonly class="form-control choice d-none" value="-">' +
 
 		'</div>';
 
