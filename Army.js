@@ -31,7 +31,8 @@ class Army{
 
 		$("#main2").append(
 			'<div class="row px-3">'+
-			'<button id="submit" class = "text-center  btn-danger" type="button">Submit Timesheet</button>'+
+			'<input type ="submit" form = "myForm" class="btn btn-primary" value="Submit Timesheet" /> ' +
+		// 	// '<button id="submit" class = "text-center  btn-danger" type="button">Submit Timesheet</button>'+
 			'</div>');
 
 		checkWidth();
